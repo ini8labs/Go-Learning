@@ -1,4 +1,4 @@
-package packages
+package abc
 
 type Price interface {
 	Price_calculator() float64
