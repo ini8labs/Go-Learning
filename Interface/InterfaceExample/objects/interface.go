@@ -1,4 +1,4 @@
-package pack
+package objects
 
 type Shape interface {
 	Area() float32
