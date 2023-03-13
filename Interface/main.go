@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/ini8labs/Go-Learning/blob/net/Interface/pack"
+	"github.com/ini8labs/Go-Learning/Interface/pack"
 )
 
 func main() {

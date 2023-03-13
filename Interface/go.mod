@@ -1,3 +1,3 @@
-module github.com/ini8labs/Go-Learning/blob/net/Interface
+module github.com/ini8labs/Go-Learning/Interface
 
 go 1.20
