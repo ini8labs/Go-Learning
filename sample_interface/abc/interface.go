@@ -1,6 +1,6 @@
 package abc
 
 type Price interface {
-	Price_calculator() float64
-	Brand_name() string
+	PriceCalculator() float64
+	BrandName() string
 }
