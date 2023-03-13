@@ -1,13 +1,13 @@
 package main
 
-import "Go-Learning/Interface/Interface/pack"
+import "Go-Learning/Interface/Interface/InterfaceExample/pack"
 
 func main() {
-	Cube := pack.Cube{Side: 5}
+	Cube := pack.Cube{Side: 10}
 
 	Cuboid := pack.Cuboid{
 		Length:  3,
-		Breadth: 4,
+		Breadth: 5,
 		Height:  10,
 	}
 

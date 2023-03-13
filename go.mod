@@ -1,3 +1,3 @@
-module Go-Learning/Interface/InterfaceExample
+module Go-Learning/Interface
 
 go 1.20
