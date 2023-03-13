@@ -1,12 +1,13 @@
 package main
 
+import "Go-Learning/Interface/InterfaceExample/objects"
 
 func main() {
 	Cube := objects.Cube{Side: 10}
 
 	Cuboid := objects.Cuboid{
 		Length:  3,
-		Breadth: 5,
+		Breadth: 4,
 		Height:  10,
 	}
 
