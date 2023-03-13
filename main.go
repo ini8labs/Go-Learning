@@ -1,6 +1,6 @@
 package main
 
-import "Go-Learning/Interface/Interface/Example/pack"
+import "Go-Learning/Interface/Interface/pack"
 
 func main() {
 	Cube := pack.Cube{Side: 5}
