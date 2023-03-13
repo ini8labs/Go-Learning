@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/ini8labs/Go-Learning/Shape/pack"
-)
+import "github.com/ini8labs/Go-Learning/Shape/Pack/Shape/pack"
 
 func main() {
 	Cube := pack.Cube{Side: 5}
