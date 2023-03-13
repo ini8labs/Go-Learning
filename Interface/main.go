@@ -1,13 +1,28 @@
 package main
 
-import ("D:\office_git\Go-Learning\Interface\pack")
+import (
+	"Interface/pack"
+)
 
 func main() {
-	shape1 := Cube{5}
-	shape2 := Cuboid{3, 4, 5}
-	shape3 := Cylinder{3, 4}
-	shape4 := Sphere{6}
-	shapes := []Shape{shape1, shape2, shape3, shape4}
-	calculate(shapes)
+	Cube := pack.Cube{Side: 5}
+
+	Cuboid := pack.Cuboid{
+		Length:  5,
+		Breadth: 4,
+		Height:  10,
+	}
+
+	Cylinder := pack.Cylinder{
+		Radius: 10,
+		Height: 20,
+	}
+
+	Sphere := pack.Sphere{
+		Radius: 10,
+	}
+
+	shapes := []pack.Shape{Cube, Cuboid, Cylinder, Sphere}
+	pack.Calculate(shapes)
 
 }

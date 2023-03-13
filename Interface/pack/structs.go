@@ -1,20 +1,20 @@
 package pack
 
 type Cube struct {
-	side float32
+	Side float32
 }
 
 type Cylinder struct {
-	height float32
-	radius float32
+	Height float32
+	Radius float32
 }
 
 type Cuboid struct {
-	length  float32
-	breadth float32
-	height  float32
+	Length  float32
+	Breadth float32
+	Height  float32
 }
 
 type Sphere struct {
-	side float32
+	Radius float32
 }
