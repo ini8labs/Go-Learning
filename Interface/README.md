@@ -41,8 +41,6 @@ type interface_name interface {
 - Example of interface
 
 ```text
-package pack
-
 type Shape interface {
     Area() float32
     Volume() float32
