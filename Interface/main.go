@@ -1,7 +1,7 @@
 package main
 
 import (
-	"Interface/pack"
+	"github.com/ini8labs/Go-Learning/blob/net/Interface/pack"
 )
 
 func main() {
@@ -24,5 +24,4 @@ func main() {
 
 	shapes := []pack.Shape{Cube, Cuboid, Cylinder, Sphere}
 	pack.Calculate(shapes)
-
 }
