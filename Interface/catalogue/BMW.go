@@ -14,12 +14,12 @@ type Beemer struct {
 func (b Beemer) PriceCalculator() float64 {
 	life := time.Now().Year() - b.Yom
 	depriciation := b.BasePrice * 0.03 * float64(life)
-	FinalPrice := b.BasePrice - depriciation
+	finalPrice := b.BasePrice - depriciation
 
 	fmt.Println("Origional price of car : ", b.BasePrice)
 	fmt.Println("Depriciation over time: ", depriciation)
 
-	return FinalPrice
+	return finalPrice
 }
 
 func (b Beemer) BrandName() string {
