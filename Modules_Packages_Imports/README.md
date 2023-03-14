@@ -57,6 +57,19 @@
 5. The following contents are in the file main.go in root directory.
 ![Alt text](Screenshot%202023-03-14%20115730.png)
 
+## Overiding a Package's Name
+
+- If we have to import two packages with same name, crypto/A and math/A.
+
+- To solve this we can provide an alternate name to one package
+
+```text
+import(
+  "crand "crypto/A"
+  math/A
+)
+```
+
 ## Package comments and godoc
 
 - godoc is Go's format for writing comments that are automatically converted into documentation.
