@@ -1,13 +1,13 @@
 package main
 
-import "github.com/ini8labs/Go-Learning/Interface/InterfaceExample/shapes"
+import "github.com/ini8labs/Go-Learning/Interface/shapes"
 
 func main() {
 	Cube := shapes.Cube{Side: 10}
 
 	Cuboid := shapes.Cuboid{
 		Length:  3,
-		Breadth: 4,
+		Breadth: 5,
 		Height:  10,
 	}
 
