@@ -16,25 +16,25 @@ func totalExpense(s []carPrice.Price) float64 {
 }
 
 func main() {
-	temp1 := carPrice.Beemer{
+	car1 := carPrice.Beemer{
 		Name:      "BMW",
 		Yom:       2020,
 		BasePrice: 300000}
-	temp2 := carPrice.Toyota{
+	car2 := carPrice.Toyota{
 		Name:      "Corola",
 		Yom:       2010,
 		BasePrice: 400000}
-	temp3 := carPrice.Beemer{
+	car3 := carPrice.Beemer{
 		Name:      "M5 Competition",
 		Yom:       2019,
 		BasePrice: 100000}
-	temp4 := carPrice.Toyota{
+	car4 := carPrice.Toyota{
 		Name:      "Supra",
 		Yom:       2000,
 		BasePrice: 900000}
 
-	Inventory := []carPrice.Price{temp1, temp2, temp3, temp4}
+	Inventory := []carPrice.Price{car1, car2, car3, car4}
 
-	fmt.Println("The total price of the cars are: ", totalExpense(Inventory))
+	fmt.Println("The total asset price of the cars in inventory: ", totalExpense(Inventory))
 
 }
