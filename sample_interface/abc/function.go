@@ -34,10 +34,12 @@ type Toyota struct {
 
 func (a Toyota) PriceCalculator() float64 {
 	Life := time.Now().Year() - a.Yom
-	depriciation := a.BasePrice * 0.1 * float64(Life)
+	depriciation := a.BasePrice * 0.05 * float64(Life)
 	FinalPrice := a.BasePrice - depriciation
+
 	fmt.Println("Origional price of car: ", a.BasePrice)
 	fmt.Println("Depriciation over time: ", depriciation)
+
 	return FinalPrice
 }
 
