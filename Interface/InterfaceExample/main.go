@@ -1,25 +1,25 @@
 package main
 
-import "Go-Learning/Interface/InterfaceExample/objects"
+import "github.com/ini8labs/Go-Learning/Interface/InterfaceExample/shapes"
 
 func main() {
-	Cube := objects.Cube{Side: 10}
+	Cube := shapes.Cube{Side: 10}
 
-	Cuboid := objects.Cuboid{
+	Cuboid := shapes.Cuboid{
 		Length:  3,
 		Breadth: 4,
 		Height:  10,
 	}
 
-	Cylinder := objects.Cylinder{
+	Cylinder := shapes.Cylinder{
 		Radius: 10,
 		Height: 20,
 	}
 
-	Sphere := objects.Sphere{
+	Sphere := shapes.Sphere{
 		Radius: 10,
 	}
 
-	shapes := []objects.Shape{Cube, Cuboid, Cylinder, Sphere}
-	objects.Calculate(shapes)
+	object := []shapes.Shape{Cube, Cuboid, Cylinder, Sphere}
+	shapes.Calculate(object)
 }
