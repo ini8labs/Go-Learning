@@ -8,33 +8,36 @@ import (
 
 func totalExpense(s []carPrice.Price) float64 {
 
-	Total := 0.0
+	total := 0.0
 	for _, v := range s {
-		Total += v.PriceCalculator()
+		total += v.PriceCalculator()
 	}
-	return Total
+	return total
 }
 
 func main() {
-	car1 := carPrice.Beemer{
+	beemer1 := carPrice.Beemer{
 		Name:      "BMW",
 		Yom:       2020,
 		BasePrice: 300000}
-	car2 := carPrice.Toyota{
+
+	toyota1 := carPrice.Toyota{
 		Name:      "Corola",
 		Yom:       2010,
 		BasePrice: 400000}
-	car3 := carPrice.Beemer{
+
+	beemer2 := carPrice.Beemer{
 		Name:      "M5 Competition",
 		Yom:       2019,
 		BasePrice: 100000}
-	car4 := carPrice.Toyota{
+
+	toyota2 := carPrice.Toyota{
 		Name:      "Supra",
 		Yom:       2000,
 		BasePrice: 900000}
 
-	Inventory := []carPrice.Price{car1, car2, car3, car4}
+	inventory := []carPrice.Price{beemer1, beemer2, toyota1, toyota2}
 
-	fmt.Println("The total asset price of the cars in inventory: ", totalExpense(Inventory))
+	fmt.Println("The total asset price of the cars in inventory: ", totalExpense(inventory))
 
 }
