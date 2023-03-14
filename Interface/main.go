@@ -1,8 +1,9 @@
 package main
 
 import (
-	
 	"fmt"
+
+	"github.com/ini8labs/Go-Learning/Interface/carPrice"
 )
 
 func totalExpense(s []carPrice.Price) float64 {
