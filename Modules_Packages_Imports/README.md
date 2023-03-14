@@ -82,3 +82,14 @@ require (
 - The image below shows a well-commented file representing package-level comment, struct comment and function comment.
 ![Alt text](Screenshot%202023-03-14%20122945.png)
 
+## Circular Dependencies
+
+- Two goals of Go are fast compiler and easy to undersatnd code.
+
+- To support this, Go does not allow to have ```circular dependency``` between packages.
+
+- This means if package A impors package B then package B cannot import package A.
+
+- If we try to build a code which has circular dependency you'll get error.
+
+- If two packages depend on each other, then you can merge it into a single package, if packages needs to be seperated, move the items causing circular dependency to one of the two packages or a new package.

@@ -17,7 +17,7 @@ func main() {
 	}
 
 	sphere := shapes.Sphere{
-		Radius: 10,
+		Radius: 9,
 	}
 
 	object := []shapes.Shape{cube, cuboid, cylinder, sphere}
