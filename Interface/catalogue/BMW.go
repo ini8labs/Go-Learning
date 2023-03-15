@@ -1,4 +1,4 @@
-package carPrice
+package catalogue
 
 import (
 	"fmt"

@@ -1,4 +1,4 @@
-package carPrice
+package catalogue
 
 type Price interface {
 	PriceCalculator() float64
