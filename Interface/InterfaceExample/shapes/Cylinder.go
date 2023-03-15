@@ -10,9 +10,9 @@ type Cylinder struct {
 }
 
 func (b Cylinder) Area() float32 {
-	return math.Pi * b.Radius * b.Radius * b.Height
+	return float32(math.Round(float64(math.Pi * b.Radius * b.Radius * b.Height)))
 }
 
 func (b Cylinder) Volume() float32 {
-	return math.Pi * b.Radius * b.Radius * b.Height
+	return float32(math.Round(float64(2 * math.Pi * b.Radius * (b.Radius + b.Height))))
 }

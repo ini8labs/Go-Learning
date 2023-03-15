@@ -9,9 +9,9 @@ type Sphere struct {
 }
 
 func (d Sphere) Area() float32 {
-	return 4 * math.Pi * d.Radius * d.Radius
+	return float32(math.Round(float64(4 * math.Pi * d.Radius * d.Radius)))
 }
 
 func (d Sphere) Volume() float32 {
-	return (4 / 3) * math.Pi * d.Radius * d.Radius * d.Radius
+	return float32(math.Round(float64((4 / 3) * math.Pi * d.Radius * d.Radius * d.Radius)))
 }

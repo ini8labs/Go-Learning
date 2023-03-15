@@ -12,8 +12,8 @@ func main() {
 	}
 
 	cylinder := shapes.Cylinder{
-		Radius: 10,
-		Height: 20,
+		Height: 10,
+		Radius: 20,
 	}
 
 	sphere := shapes.Sphere{
