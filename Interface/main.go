@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/ini8labs/Go-Learning/Interface/catalogue"
 )
 
 func totalExpense(s []catalogue.Price) float64 {
