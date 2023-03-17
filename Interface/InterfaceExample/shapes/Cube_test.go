@@ -1,34 +1,42 @@
 package shapes
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestCube_Area(t *testing.T) {
-	testCases := []struct {
-		name   string
-		inpt   Cube
-		output float32
+	tests := []struct {
+		name    string
+		a       Cube
+		want    float32
+		wantErr bool
 	}{
 		{
 			name: "Calculate Area of Cube",
-			inpt: Cube{
+			a: Cube{
 				Side: 10,
 			},
-			output: 600,
+			want:    600,
+			wantErr: false,
 		},
-
 		{
 			name: "Checking Area for -ve values",
-			inpt: Cube{
+			a: Cube{
 				Side: -10,
 			},
-			output: 600,
+			want:    -1,
+			wantErr: true,
 		},
 	}
-
-	for _, tt := range testCases {
+	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := tt.inpt.Area(); got != tt.output {
-				t.Errorf("Cube.Area() = %v, want %v", got, tt.output)
+			got, err := tt.a.Area()
+			if (err != nil) != tt.wantErr {
+				t.Errorf("Cube.Area() error = %v, wantErr %v", err, tt.wantErr)
+				return
+			}
+			if got != tt.want {
+				t.Errorf("Cube.Area() = %v, want %v", got, tt.want)
 			}
 		})
 	}
@@ -36,29 +44,37 @@ func TestCube_Area(t *testing.T) {
 
 func TestCube_Volume(t *testing.T) {
 	tests := []struct {
-		name string
-		inpt Cube
-		otpt float32
+		name    string
+		a       Cube
+		want    float32
+		wantErr bool
 	}{
 		{
 			name: "Calculate Volume of cube",
-			inpt: Cube{
+			a: Cube{
 				Side: 10,
 			},
-			otpt: 1000,
+			want:    1000,
+			wantErr: false,
 		},
 		{
 			name: "Checking Volume for -ve values",
-			inpt: Cube{
+			a: Cube{
 				Side: -10,
 			},
-			otpt: -1000,
+			want:    -1,
+			wantErr: true,
 		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := tt.inpt.Volume(); got != tt.otpt {
-				t.Errorf("Cube.Volume() = %v, want %v", got, tt.otpt)
+			got, err := tt.a.Volume()
+			if (err != nil) != tt.wantErr {
+				t.Errorf("Cube.Volume() error = %v, wantErr %v", err, tt.wantErr)
+				return
+			}
+			if got != tt.want {
+				t.Errorf("Cube.Volume() = %v, want %v", got, tt.want)
 			}
 		})
 	}

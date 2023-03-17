@@ -7,19 +7,25 @@ import (
 var a = make([]float32, 4)
 var vol = make([]float32, 4)
 
-func Calculate(s []Shape) ([]float32, []float32) {
+func Calculate(s []Shape) ([]float32, []float32, error) {
 
-	var area float32 = 0
-	var volume float32 = 0
-	for _, v := range s {
-		area = v.Area()
-		volume = v.Volume()
-		a = append(a, area)
-		vol = append(vol, volume)
+	for i, v := range s {
+		area, err := v.Area()
+		if err != nil {
+			return nil, nil, err
+		}
+		volume, err := v.Volume()
+		if err != nil {
+			return nil, nil, err
+		}
+
+		a[i] = area
+		vol[i] = volume
+
 		fmt.Println("Dimensions of object: ", v)
 		fmt.Println("Area of object: ", area)
 		fmt.Println("Volume of object: ", volume)
 
 	}
-	return a, vol
+	return a, vol, nil
 }
