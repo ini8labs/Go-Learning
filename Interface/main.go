@@ -27,7 +27,7 @@ func main() {
 		Yom:       2000,
 		BasePrice: 900000}
 
-	inventory := []catalogue.Price{beemer1, beemer2, toyota1, toyota2}
+	inventory := []catalogue.Cars{beemer1, beemer2, toyota1, toyota2}
 
 	fmt.Println("The total asset price of the cars in inventory: ", catalogue.TotalExpense(inventory))
 

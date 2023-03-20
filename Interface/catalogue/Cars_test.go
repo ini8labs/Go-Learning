@@ -3,9 +3,6 @@ package catalogue
 import "testing"
 
 func TestTotalExpense(t *testing.T) {
-	// type args struct {
-	// 	s []Cars
-	// }
 
 	bmw := catalogue.BWM {
 		Name: "M5",

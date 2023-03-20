@@ -4,7 +4,7 @@ import "testing"
 
 func TestToyota_PriceCalculator(t *testing.T) {
 
-	toyota1 := Toyota {
+	toyota1 := catalogue.Toyota {
 		Name: "fortuner", 
 		Yom: 2016, 
 		BasePrice: 50000,
@@ -26,7 +26,7 @@ func TestToyota_PriceCalculator(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := PriceCalculator(toyota1); got != tt.want {
+			if got := PriceCalculator(tt.toyota1); got != tt.want {
 				t.Errorf("Toyota.PriceCalculator() = %v, want %v", got, tt.want)
 			}
 		})
