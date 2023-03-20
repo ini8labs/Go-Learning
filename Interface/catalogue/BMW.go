@@ -5,13 +5,13 @@ import (
 	"time"
 )
 
-type Beemer struct {
+type BWM struct {
 	Name      string
 	Yom       int
 	BasePrice float64
 }
 
-func (b Beemer) PriceCalculator() float64 {
+func (b BWM) PriceCalculator() float64 {
 	life := time.Now().Year() - b.Yom
 	depriciation := b.BasePrice * 0.03 * float64(life)
 	finalPrice := b.BasePrice - depriciation
@@ -22,6 +22,6 @@ func (b Beemer) PriceCalculator() float64 {
 	return finalPrice
 }
 
-func (b Beemer) BrandName() string {
+func (b BWM) BrandName() string {
 	return b.Name
 }

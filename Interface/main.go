@@ -6,17 +6,8 @@ import (
 	"github.com/ini8labs/Go-Learning/Interface/catalogue"
 )
 
-func totalExpense(s []catalogue.Price) float64 {
-
-	total := 0.0
-	for _, v := range s {
-		total += v.PriceCalculator()
-	}
-	return total
-}
-
 func main() {
-	beemer1 := catalogue.Beemer{
+	beemer1 := catalogue.BWM{
 		Name:      "BMW",
 		Yom:       2020,
 		BasePrice: 300000}
@@ -26,7 +17,7 @@ func main() {
 		Yom:       2010,
 		BasePrice: 400000}
 
-	beemer2 := catalogue.Beemer{
+	beemer2 := catalogue.BWM{
 		Name:      "M5 Competition",
 		Yom:       2019,
 		BasePrice: 100000}
@@ -38,6 +29,6 @@ func main() {
 
 	inventory := []catalogue.Price{beemer1, beemer2, toyota1, toyota2}
 
-	fmt.Println("The total asset price of the cars in inventory: ", totalExpense(inventory))
+	fmt.Println("The total asset price of the cars in inventory: ", catalogue.TotalExpense(inventory))
 
 }
