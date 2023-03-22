@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	docs "github.com/ini8labs/Go-Learning/Swagger"
+	docs "github.com/ini8labs/Go-Learning/Swagger/docs"
 	swaggerfiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
 )
