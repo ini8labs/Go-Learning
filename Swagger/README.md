@@ -2,7 +2,7 @@
 
 ## What is Swagger and why to use swagger
 
--Swagger is a set of open-source tools built around the OpenAPI Specification that can help you design, build, document and consume REST APIs.
+- Swagger is a set of open-source tools built around the OpenAPI Specification that can help you design, build, document and consume REST APIs.
 
 - For the other developers to be able to use our API, the API must be properly documented; otherwise, how would they know that what are the endpoints exposed by the api and what are the operations supported on those endpoints? What parameters should they pass, and what will they get back? What authentication methods to use?.
 
