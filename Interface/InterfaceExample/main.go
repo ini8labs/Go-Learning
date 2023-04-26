@@ -3,7 +3,9 @@ package main
 import "github.com/ini8labs/Go-Learning/Interface/shapes"
 
 func main() {
-	cube := shapes.Cube{Side: 10}
+	cube := shapes.Cube{
+		Side: 10,
+	}
 
 	cuboid := shapes.Cuboid{
 		Length:  3,
@@ -12,8 +14,8 @@ func main() {
 	}
 
 	cylinder := shapes.Cylinder{
-		Radius: 10,
-		Height: 20,
+		Height: 10,
+		Radius: 20,
 	}
 
 	sphere := shapes.Sphere{
